@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "times new roman", serif;
+  scroll-behavior: smooth;
+}
+.pageContainer {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  .pageContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .pageContainer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Extra small */
+@media (max-width: 480px) {
+  .pageContainer {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+.gradientSection {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #92C0FC 0%,
+    #92C0FC 10%,
+    #6D8BA9 30%,
+    #6D8BA9 100%
+  );
+}
+
+.homeHeading{
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #1B1E25;
+  padding: 4rem 0;
+  letter-spacing: 1.5px;
+}
+
+
+/* default scroll bar */
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;              /* width of vertical scrollbar */
+  height: 10px;             /* height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #111;         /* track (background) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #444, #777); /* thumb color */
+  border-radius: 10px;
+  border: 2px solid #111;   
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #666, #aaa); /* hover effect */
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #666 #111;
+}

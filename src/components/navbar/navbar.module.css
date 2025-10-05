@@ -1,0 +1,235 @@
+.navbar {
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 100%);
+  position: relative;
+  z-index: 999;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.logoName {
+  display: block;
+  font-size: 1.8rem;
+}
+
+.logoSurname {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+.navLinks li a:hover {
+  opacity: 0.8;
+}
+
+.navLinks li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #D4A373;
+  transition: width 0.3s ease;
+}
+
+.navLinks li a:hover::after {
+  width: 100%;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socialIcon {
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .container {
+    padding: 1rem 1.5rem;
+  }
+
+  .navLinks {
+    gap: 1.5rem;
+  }
+
+  .rightSection {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightSection {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+    padding: 5rem 2rem 2rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobileMenu.open {
+    right: 0;
+  }
+
+  .mobileNavLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+
+  .mobileNavLinks li {
+    margin-bottom: 1.5rem;
+  }
+
+  .mobileNavLinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    padding: 0.5rem 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .mobileNavLinks li a:hover {
+    opacity: 0.8;
+  }
+
+  .mobileSocialIcons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .overlay.open {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .logoName {
+    font-size: 1.5rem;
+  }
+
+  .logoSurname {
+    font-size: 1.2rem;
+  }
+
+  .mobileMenu {
+    width: 80%;
+  }
+}
+@media (min-width: 2000px) {
+  .navLinks li a {
+    font-size: 30px;
+  }
+}
