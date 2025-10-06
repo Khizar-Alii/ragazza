@@ -1,0 +1,200 @@
+.libroLiberoContainer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.textColumn {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
+
+.dedication {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dedication p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #000;
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+.imageColumn {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .contentWrapper {
+    gap: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .dedication p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .libroLiberoContainer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .textColumn,
+  .imageColumn {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  .imageWrapper {
+    max-width: 450px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .libroLiberoContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .contentWrapper {
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .dedication p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .imageWrapper {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentWrapper {
+    gap: 1.5rem;
+  }
+
+  .textColumn {
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .dedication p {
+    font-size: 0.9rem;
+  }
+
+  .imageWrapper {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .contentWrapper {
+    gap: 5rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .dedication p {
+    font-size: 1.3rem;
+  }
+
+  .imageWrapper {
+    max-width: 600px;
+  }
+}

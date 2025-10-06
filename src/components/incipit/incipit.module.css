@@ -1,0 +1,53 @@
+.incipitSection {
+  padding: 4rem 1rem;
+  color: #222;
+  font-family: "Georgia", serif;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.textContainer {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  text-align: justify;
+  color: #333;
+}
+
+.buttonWrapper {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.downloadButton {
+  background-color: #000;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .incipitSection {
+    padding: 3rem 1rem;
+  }
+
+  .textContainer {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .downloadButton {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
