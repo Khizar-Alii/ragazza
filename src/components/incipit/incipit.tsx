@@ -1,4 +1,4 @@
-import styles from "./Incipit.module.css";
+import styles from "./incipit.module.css";
 const Incipit = () => {
   const handleDownload = () => {
     const pdfUrl =
