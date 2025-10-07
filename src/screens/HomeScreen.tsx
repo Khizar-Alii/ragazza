@@ -1,4 +1,4 @@
-import HeroComponent from "../components/hero/heroComponent"
+// import HeroComponent from "../components/hero/heroComponent"
 import Incipit from "../components/incipit/incipit"
 import Introduction from "../components/Introduction/introduction"
 import SlideShowComp from "../components/slideShowComp/slideShowComp"
@@ -9,9 +9,9 @@ import TwoColumnSection from "../components/twoColumnSection/twoColumnSection"
 const HomeScreen = () => {
   return (
     <div>
-        <HeroComponent />
         <div className="gradientSection ">
           <TextImageSection />
+        {/* <HeroComponent /> */}
           <Introduction />
           <Synopsis />
           <TwoColumnSection />

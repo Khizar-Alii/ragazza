@@ -5,7 +5,7 @@ const Synopsis = () => {
     <section className={`${styles.synopsisContainer}`}>
       <div className={`${styles.synopsisWrapper} pageContainer`}>
         <div className={styles.textColumn}>
-          <h2 className={styles.title}>Synopsis</h2>
+          <h2 className={styles.title}>Sinossi</h2>
           <p>
             Se n'è andata in fretta, così come viveva di corsa con la paura di
             perdersi qualcosa, senza disturbare nessuno. La vita non le è stata

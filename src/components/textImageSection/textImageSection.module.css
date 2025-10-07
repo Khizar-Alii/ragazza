@@ -1,6 +1,7 @@
 .libroLiberoContainer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  height: 100vh;
 }
 
 .contentWrapper {
@@ -8,6 +9,8 @@
   gap: 4rem;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
 }
 
 .textColumn {

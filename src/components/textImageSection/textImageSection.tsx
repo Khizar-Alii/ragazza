@@ -1,33 +1,38 @@
-import BikeImage from '../../assets/bikeimg.jpg';
-import styles from './textImageSection.module.css';
+import BikeImage from "../../assets/bikeimg.jpg";
+import Navbar from "../navbar/navbar";
+import styles from "./textImageSection.module.css";
 
 const TextImageSection = () => {
   return (
-    <div className={`${styles.libroLiberoContainer} pageContainer`}>
-      <div className={styles.contentWrapper}>
-        {/* Left Column - Text */}
-        <div className={styles.textColumn}>
-          <h1 className={styles.title}>LIBROLIBERO</h1>
+    <>
+      <Navbar />
 
-          <h2 className={styles.subtitle}>La Contabilità della Gioia</h2>
+      <div className={`${styles.libroLiberoContainer} pageContainer`}>
+        <div className={styles.contentWrapper}>
+          {/* Left Column - Text */}
+          <div className={styles.textColumn}>
+            <h1 className={styles.title}>LIBROLIBERO</h1>
 
-          <div className={styles.dedication}>
-            <p>
-              Dedicato a Silvia, morta per malattia a vent'anni nello splendore
-              della sua adolescenza.
-            </p>
-            <p>Dedicato a Ippolita, sua sorella.</p>
+            <h2 className={styles.subtitle}>La Contabilità della Gioia</h2>
+
+            <div className={styles.dedication}>
+              <p>
+                Dedicato a Silvia, morta per malattia a vent'anni nello
+                splendore della sua adolescenza.
+              </p>
+              <p>Dedicato a Ippolita, sua sorella.</p>
+            </div>
           </div>
-        </div>
 
-        {/* Right Column - Image */}
-        <div className={styles.imageColumn}>
-          <div className={styles.imageWrapper}>
-            <img src={BikeImage} alt="Woman on bike" />
+          {/* Right Column - Image */}
+          <div className={styles.imageColumn}>
+            <div className={styles.imageWrapper}>
+              <img src={BikeImage} alt="Woman on bike" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
