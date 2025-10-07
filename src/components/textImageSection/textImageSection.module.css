@@ -1,28 +1,35 @@
 .libroLiberoContainer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  height: 100vh;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .contentWrapper {
   display: flex;
-  gap: 4rem;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
-  height: 100%;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .textColumn {
   flex: 1;
-  min-width: 320px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
+  text-align: left;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: clamp(1.6rem, 5vw, 3rem);
   font-weight: 700;
   color: #000;
   margin: 0;
@@ -30,7 +37,7 @@
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 4vw, 2rem);
   font-weight: 400;
   color: #000;
   margin: 0;
@@ -44,15 +51,15 @@
 }
 
 .dedication p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: clamp(0.85rem, 3vw, 1.1rem);
+  line-height: 1.6;
   color: #000;
   margin: 0;
 }
 
 .imageColumn {
   flex: 1;
-  min-width: 320px;
+  min-width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,86 +80,34 @@
   object-fit: cover;
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .contentWrapper {
-    gap: 3rem;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .subtitle {
-    font-size: 1.8rem;
-  }
-
-  .dedication p {
-    font-size: 1rem;
-  }
-}
-
+/* Medium screens */
 @media (max-width: 968px) {
   .libroLiberoContainer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 1rem;
   }
 
   .contentWrapper {
     flex-direction: column;
     gap: 2.5rem;
+    text-align: center;
   }
 
-  .textColumn,
-  .imageColumn {
-    flex: 1 1 100%;
-    max-width: 100%;
-    min-width: unset;
+  .textColumn {
+    text-align: center;
+    align-items: center;
   }
 
   .imageWrapper {
-    max-width: 450px;
-  }
-
-  .title {
-    font-size: 2.2rem;
-  }
-
-  .subtitle {
-    font-size: 1.6rem;
+    max-width: 420px;
   }
 }
 
-@media (max-width: 768px) {
+/* Small phones */
+@media (max-width: 600px) {
   .libroLiberoContainer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
   }
 
-  .contentWrapper {
-    gap: 2rem;
-  }
-
-  .title {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-
-  .subtitle {
-    font-size: 1.4rem;
-  }
-
-  .dedication p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .imageWrapper {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 480px) {
   .contentWrapper {
     gap: 1.5rem;
   }
@@ -161,23 +116,32 @@
     gap: 1rem;
   }
 
-  .title {
-    font-size: 1.6rem;
-  }
-
-  .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .dedication p {
-    font-size: 0.9rem;
-  }
-
   .imageWrapper {
-    max-width: 320px;
+    max-width: 360px;
   }
 }
 
+/* Very small screens (below 360px width) */
+@media (max-width: 360px) {
+  .title {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .dedication p {
+    font-size: 0.8rem;
+  }
+
+  .imageWrapper {
+    max-width: 280px;
+  }
+}
+
+/* Extra large monitors */
 @media (min-width: 2000px) {
   .contentWrapper {
     gap: 5rem;
