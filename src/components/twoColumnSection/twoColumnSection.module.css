@@ -1,92 +1,37 @@
 .twoColContainer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
 }
 
 .contentWrapper {
   display: flex;
-  gap: 8rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.imageColumn {
-  flex: 0 0 30%;
-  max-width: 30%;
-  min-width: 280px;
-}
-
-.imageFrame {
-  border-radius: 20px;
-  overflow: hidden;
-  background: #333;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  display: block;
+  justify-content: center;
 }
 
 .textColumn {
-  flex: 1;
-  min-width: 320px;
+  max-width: 900px;
+  width: 100%;
 }
 
 .title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
-  margin-bottom: 10px;
-  color: #000000;
+  margin-bottom: 1rem;
+  color: #000;
 }
 
 .textContent {
   font-size: 1rem;
   color: #000;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.7;
 }
 
 .textContent p {
   margin-bottom: 1rem;
 }
 
-.signature {
-  text-align: right;
-  font-weight: 700;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
 /* Responsive Styles */
-@media (max-width: 1200px) {
-  .contentWrapper {
-    gap: 4rem;
-  }
-}
-
 @media (max-width: 968px) {
-  .contentWrapper {
-    gap: 3rem;
-    flex-direction: column;
-  }
-
-  .imageColumn {
-    flex: 1 1 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .imageFrame {
-    max-width: 400px;
-  }
-
-  .textColumn {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
   .title {
     font-size: 2rem;
   }
@@ -98,53 +43,33 @@
 
 @media (max-width: 768px) {
   .twoColContainer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .contentWrapper {
-    gap: 2rem;
+    padding: 3rem 0;
   }
 
   .title {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   .textContent {
-    line-height: 1.7;
+    font-size: 0.9rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .twoColContainer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .imageFrame {
-    max-width: 260px; /* smaller so it fits */
-    border-radius: 15px;
+    padding: 2rem 0;
   }
 
   .title {
     font-size: 1.4rem;
     line-height: 1.4;
-    margin-bottom: 1rem;
-    text-align: center; /* optional for better balance */
   }
 
   .textContent {
     font-size: 0.85rem;
     line-height: 1.5;
-    word-break: break-word; /* prevents text overflow */
-    text-align: center;     /* optional: makes mobile layout cleaner */
-  }
-
-  .signature {
-    font-size: 12px;
-    margin-top: 0.75rem;
-    text-align: center; /* avoids overflow and looks balanced */
     word-break: break-word;
   }
 }
