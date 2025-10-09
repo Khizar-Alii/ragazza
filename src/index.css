@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "times new roman", serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .pageContainer {
   padding-left: 6rem;

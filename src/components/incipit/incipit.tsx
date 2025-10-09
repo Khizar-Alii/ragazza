@@ -8,6 +8,7 @@ const Incipit = () => {
 
   return (
     <section className={styles.incipitSection}>
+      <h2 style={{padding:"20px 0"}}>INCIPIT</h2>
       <div className={styles.textContainer}>
         <p>
           Se n'è andata in fretta, così come viveva di corsa con la paura di

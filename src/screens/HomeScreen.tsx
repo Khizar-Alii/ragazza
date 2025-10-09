@@ -4,7 +4,7 @@ import Introduction from "../components/Introduction/introduction"
 import SlideShowComp from "../components/slideShowComp/slideShowComp"
 import Synopsis from "../components/synopsis/synopsis"
 import TextImageSection from "../components/textImageSection/textImageSection"
-import TwoColumnSection from "../components/twoColumnSection/twoColumnSection"
+// import TwoColumnSection from "../components/twoColumnSection/twoColumnSection"
 
 const HomeScreen = () => {
   return (
@@ -14,7 +14,7 @@ const HomeScreen = () => {
         {/* <HeroComponent /> */}
           <Introduction />
           <Synopsis />
-          <TwoColumnSection />
+          {/* <TwoColumnSection /> */}
           {/* <ThreeColumnSection /> */}
           <h1 className="homeHeading">Ricordi in immagini</h1>
           <SlideShowComp />

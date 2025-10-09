@@ -18,13 +18,20 @@
 }
 
 .title {
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   color: #000;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.subtitle {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+}
+
 
 .textColumn p {
   font-size: 15px;
@@ -106,5 +113,21 @@
 
   .imageWrapper {
     max-width: 320px;
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .textColumn p {
+    font-size: 10px;
+    line-height: 1.7;
+    word-break: break-all;
+  }
+
+  .imageWrapper {
+    max-width: auto;
   }
 }
