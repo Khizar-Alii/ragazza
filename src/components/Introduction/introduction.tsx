@@ -21,7 +21,7 @@ const Introduction = () => {
             celebrare un anniversario di morte sulla rete. Buongusto? Eleganza?
             Privatezza del dolore? La storia dei santini su FB non mi piace, non
             mi è mai piaciuta. Vivo o morto resti lì nell'improbabile eternità
-            dei sociali. Non voglio questo per mia figlia.
+            dei social. Non voglio questo per mia figlia.
           </p>
           <p>
             Ma ho pensato anche che uno dei doni più belli per me è ricevere un
