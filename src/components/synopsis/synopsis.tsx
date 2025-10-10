@@ -24,7 +24,7 @@ const Synopsis = () => {
               di coscienza, fino al dialogo spontaneo che rende sopportabile una
               conversazione drammatica e impossibile.
               <br />
-              I sei quadri contengono la sofferenza straziante di una donna e di
+              <strong>I sei quadri</strong> contengono la sofferenza straziante di una donna e di
               una madre a cui la vita ha riservato la prova più dolorosa: la
               perdita di una figlia. Questo il tema che il libro affronta con
               sorprendente coraggio e vivido realismo, immergendosi senza
@@ -38,14 +38,6 @@ const Synopsis = () => {
               realistica, alla scarnificazione del monologo interiore — al
               limite del libero flusso di coscienza — fino al dialogo spontaneo
               che rende sopportabile una conversazione drammatica e impossibile.
-              <br />
-              <strong>I sei quadri </strong> Contengono la sofferenza straziante
-              di una donna e di una madre a cui la vita ha riservato la prova
-              più dolorosa: la perdita di una figlia. Questo è il tema che il
-              libro affronta con sorprendente coraggio e vivido realismo,
-              immergendosi senza anestetici nel vortice di domande e di
-              disperazione della protagonista, privata del suo mondo affettivo e
-              della percezione di sé.
               <br />
               <strong>La sua identità</strong>, ormai a brandelli, la lascia galleggiare nel
               vuoto privo di gravità in cui il solo concetto di vita diventa
