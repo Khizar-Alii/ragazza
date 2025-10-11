@@ -24,14 +24,6 @@ const Synopsis = () => {
               di coscienza, fino al dialogo spontaneo che rende sopportabile una
               conversazione drammatica e impossibile.
               <br />
-              <strong>I sei quadri</strong> contengono la sofferenza straziante di una donna e di
-              una madre a cui la vita ha riservato la prova più dolorosa: la
-              perdita di una figlia. Questo il tema che il libro affronta con
-              sorprendente coraggio e vivido realismo, immergendosi senza
-              anestetici nel vortice di domande e di disperazione della
-              protagonista, privata del suo mondo affettivo e della percezione
-              di sé.
-              <br />
               <strong>Uno stile linguistico che cambia</strong> Si modula ad
               ogni passaggio: da una prosa sciolta, che corre lungo il binario
               dei pensieri, facendosi lirica e allo stesso tempo aspramente
@@ -39,15 +31,24 @@ const Synopsis = () => {
               limite del libero flusso di coscienza — fino al dialogo spontaneo
               che rende sopportabile una conversazione drammatica e impossibile.
               <br />
-              <strong>La sua identità</strong>, ormai a brandelli, la lascia galleggiare nel
-              vuoto privo di gravità in cui il solo concetto di vita diventa
-              insopportabile, un buio fatto di porte chiuse, di sensi di colpa e
-              di nostalgia, in cui rischia di perdere di vista il senso
-              dell’esistere con esiti tragici. Sarà un nuovo dolore, un’inattesa
-              consapevolezza a risvegliarla dal torpore, e un compito a
-              richiamarla alla vita e alla gioia. Tra suggestioni poetiche e
-              importanti riflessioni sulla genitorialità e sulle dinamiche
-              familiari, Luisa Fontana ci offre un romanzo elegante e prezioso.
+              <strong>I sei quadri</strong> contengono la sofferenza straziante
+              di una donna e di una madre a cui la vita ha riservato la prova
+              più dolorosa: la perdita di una figlia. Questo il tema che il
+              libro affronta con sorprendente coraggio e vivido realismo,
+              immergendosi senza anestetici nel vortice di domande e di
+              disperazione della protagonista, privata del suo mondo affettivo e
+              della percezione di sé.
+              <br />
+              <strong>La sua identità</strong>, ormai a brandelli, la lascia
+              galleggiare nel vuoto privo di gravità in cui il solo concetto di
+              vita diventa insopportabile, un buio fatto di porte chiuse, di
+              sensi di colpa e di nostalgia, in cui rischia di perdere di vista
+              il senso dell’esistere con esiti tragici. Sarà un nuovo dolore,
+              un’inattesa consapevolezza a risvegliarla dal torpore, e un
+              compito a richiamarla alla vita e alla gioia. Tra suggestioni
+              poetiche e importanti riflessioni sulla genitorialità e sulle
+              dinamiche familiari, Luisa Fontana ci offre un romanzo elegante e
+              prezioso.
             </p>
           </div>
         </div>

@@ -31,12 +31,12 @@ const Navbar = () => {
                 <Link to="#facebook" className={styles.socialIcon}>
                   <FaFacebook size={24} color="white" />
                 </Link>
-                <Link to="#youtube" className={styles.socialIcon}>
+                {/* <Link to="#youtube" className={styles.socialIcon}>
                   <FaYoutube size={24} color="white" />
                 </Link>
                 <Link to="#behance" className={styles.socialIcon}>
                   <FaBehanceSquare size={24} color="white" />
-                </Link>
+                </Link> */}
               </div>
               <span style={{ color: "white" }}>|</span>
             </div>
