@@ -5,6 +5,7 @@
   background: url("../../assets/silvia.png") no-repeat center right/cover;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* Overlay for readability */

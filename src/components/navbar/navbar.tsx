@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./navbar.module.css";
 import { FaFacebook } from "react-icons/fa6";
-import { FaBehanceSquare, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -73,12 +72,12 @@ const Navbar = () => {
             <Link to="#facebook" className={styles.socialIcon}>
               <FaFacebook size={24} color="white" />
             </Link>
-            <Link to="#youtube" className={styles.socialIcon}>
+            {/* <Link to="#youtube" className={styles.socialIcon}>
               <FaYoutube size={24} color="white" />
-            </Link>
-            <Link to="#behance" className={styles.socialIcon}>
+            </Link> */}
+            {/* <Link to="#behance" className={styles.socialIcon}>
               <FaBehanceSquare size={24} color="white" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
