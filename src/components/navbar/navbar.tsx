@@ -27,7 +27,7 @@ const Navbar = () => {
               </ul>
               <span style={{ color: "white" }}>|</span>
               <div className={styles.socialIcons}>
-                <Link to="#facebook" className={styles.socialIcon}>
+                <Link target="_blank" to="https://www.facebook.com/share/1aFHgfWSQt/" className={styles.socialIcon}>
                   <FaFacebook size={24} color="white" />
                 </Link>
                 {/* <Link to="#youtube" className={styles.socialIcon}>
@@ -69,7 +69,7 @@ const Navbar = () => {
           </ul>
 
           <div className={styles.mobileSocialIcons}>
-            <Link to="#facebook" className={styles.socialIcon}>
+            <Link target="_blank" to="https://www.facebook.com/share/1aFHgfWSQt/" className={styles.socialIcon}>
               <FaFacebook size={24} color="white" />
             </Link>
             {/* <Link to="#youtube" className={styles.socialIcon}>
