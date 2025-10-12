@@ -12,24 +12,17 @@ const Synopsis = () => {
           <h3 className={styles.subtitle}>Sinossi</h3>
           <div className={styles.textContent}>
             <p>
-              Un testo rigidamente strutturato: suddiviso in sei parti, sei
+              <strong>Un testo</strong> rigidamente strutturato: suddiviso in sei parti, sei
               quadri di vita e di morte, ognuno dei quali è introdotto scandito
               e concluso da componimenti poetici. Poesie scritte nel corso degli
               anni, in vita e in morte delle figlie.
               <br />
-              Uno stile linguistico che cambia, si modula ad ogni passaggio: da
+              <strong>Uno stile</strong> linguistico che cambia, si modula ad ogni passaggio: da
               una prosa sciolta, che corre lungo il binario dei pensieri,
               facendosi lirica e allo stesso tempo aspramente realistica, alla
               scarnificazione del monologo interiore al limite del libero flusso
               di coscienza, fino al dialogo spontaneo che rende sopportabile una
               conversazione drammatica e impossibile.
-              <br />
-              <strong>Uno stile linguistico che cambia</strong> Si modula ad
-              ogni passaggio: da una prosa sciolta, che corre lungo il binario
-              dei pensieri, facendosi lirica e allo stesso tempo aspramente
-              realistica, alla scarnificazione del monologo interiore — al
-              limite del libero flusso di coscienza — fino al dialogo spontaneo
-              che rende sopportabile una conversazione drammatica e impossibile.
               <br />
               <strong>I sei quadri</strong> contengono la sofferenza straziante
               di una donna e di una madre a cui la vita ha riservato la prova
