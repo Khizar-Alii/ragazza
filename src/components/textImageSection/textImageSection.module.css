@@ -121,23 +121,57 @@
   }
 }
 
-/* Very small screens (below 360px width) */
-@media (max-width: 360px) {
+/* Very small screens (below 400px width) */
+@media (max-width: 400px) {
+  .libroLiberoContainer {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .textColumn {
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
   .title {
-    font-size: 1.3rem;
-    letter-spacing: 0.5px;
+    font-size: 1.4rem;
+    letter-spacing: 0.8px;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+
+  .dedication {
+    gap: 0.4rem;
   }
 
   .dedication p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .imageColumn {
+    margin-top: 0.8rem;
   }
 
   .imageWrapper {
-    max-width: 280px;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  .imageWrapper img {
+    width: 100%;
+    height: auto;
   }
 }
 
