@@ -14,8 +14,8 @@ const ContactScreen = () => {
           </p>
 
           <div className={styles.emailBox}>
-            <a href="mailto:info@example.com" className={styles.email}>
-              info@example.com
+            <a href="mailto:fontana.luisa01@yahoo.com" className={styles.email}>
+              fontana.luisa01@yahoo.com
             </a>
           </div>
         </section>
