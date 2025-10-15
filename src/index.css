@@ -83,3 +83,46 @@
   scrollbar-width: thin;
   scrollbar-color: #666 #111;
 }
+
+/* scroll to top css */
+
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background-color: #d4a373;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* When visible */
+.scrollToTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scrollToTopBtn:hover {
+  background-color: #b9825d;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+  .scrollToTopBtn {
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
+}

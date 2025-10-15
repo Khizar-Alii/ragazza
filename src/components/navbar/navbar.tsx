@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./navbar.module.css";
 import { FaFacebook } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,29 +13,54 @@ const Navbar = () => {
     <>
       <nav className={styles.navbar}>
         <div className="pageContainer">
-          <div className={`${styles.container}`}>
-            <Link to="/" className={styles.logo}>
+          <div className={styles.container}>
+            <NavLink to="/" className={styles.logo}>
               <span className={styles.logoName}>Luisa</span>
               <span className={styles.logoSurname}>Fontana</span>
-            </Link>
+            </NavLink>
 
             <div className={styles.rightSection}>
               <ul className={styles.navLinks}>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact Us</Link></li>
+                <li>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      `${styles.link} ${isActive ? styles.active : ""}`
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                      `${styles.link} ${isActive ? styles.active : ""}`
+                    }
+                  >
+                    About
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      `${styles.link} ${isActive ? styles.active : ""}`
+                    }
+                  >
+                    Contact Us
+                  </NavLink>
+                </li>
               </ul>
               <span style={{ color: "white" }}>|</span>
               <div className={styles.socialIcons}>
-                <Link target="_blank" to="https://www.facebook.com/share/1aFHgfWSQt/" className={styles.socialIcon}>
+                <NavLink
+                  target="_blank"
+                  to="https://www.facebook.com/share/1aFHgfWSQt/"
+                  className={styles.socialIcon}
+                >
                   <FaFacebook size={24} color="white" />
-                </Link>
-                {/* <Link to="#youtube" className={styles.socialIcon}>
-                  <FaYoutube size={24} color="white" />
-                </Link>
-                <Link to="#behance" className={styles.socialIcon}>
-                  <FaBehanceSquare size={24} color="white" />
-                </Link> */}
+                </NavLink>
               </div>
               <span style={{ color: "white" }}>|</span>
             </div>
@@ -49,35 +74,33 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
         <div
           className={`${styles.overlay} ${isOpen ? styles.open : ""}`}
           onClick={closeMenu}
-        >
-        </div>
+        ></div>
 
         <div className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
           <ul className={styles.mobileNavLinks}>
             <li>
-              <Link to="/" onClick={closeMenu}>Home</Link>
+              <NavLink to="/" onClick={closeMenu}>Home</NavLink>
             </li>
             <li>
-              <Link to="/about" onClick={closeMenu}>About</Link>
+              <NavLink to="/about" onClick={closeMenu}>About</NavLink>
             </li>
             <li>
-              <Link to="/contact" onClick={closeMenu}>Contact Us</Link>
+              <NavLink to="/contact" onClick={closeMenu}>Contact Us</NavLink>
             </li>
           </ul>
 
           <div className={styles.mobileSocialIcons}>
-            <Link target="_blank" to="https://www.facebook.com/share/1aFHgfWSQt/" className={styles.socialIcon}>
+            <NavLink
+              target="_blank"
+              to="https://www.facebook.com/share/1aFHgfWSQt/"
+              className={styles.socialIcon}
+            >
               <FaFacebook size={24} color="white" />
-            </Link>
-            {/* <Link to="#youtube" className={styles.socialIcon}>
-              <FaYoutube size={24} color="white" />
-            </Link> */}
-            {/* <Link to="#behance" className={styles.socialIcon}>
-              <FaBehanceSquare size={24} color="white" />
-            </Link> */}
+            </NavLink>
           </div>
         </div>
       </nav>

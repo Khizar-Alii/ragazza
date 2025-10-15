@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(to right,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
   position: relative;
   z-index: 999;
 }
@@ -47,7 +47,8 @@
   align-items: center;
 }
 
-.navLinks li a {
+/* ========== NAV LINKS ========== */
+.link {
   color: white;
   text-decoration: none;
   transition: opacity 0.3s ease;
@@ -57,11 +58,12 @@
   letter-spacing: 0.7px;
 }
 
-.navLinks li a:hover {
+.link:hover {
   opacity: 0.8;
 }
 
-.navLinks li a::after {
+/* underline animation */
+.link::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -72,9 +74,20 @@
   transition: width 0.3s ease;
 }
 
-.navLinks li a:hover::after {
+.link:hover::after {
   width: 100%;
 }
+
+/* Active route underline */
+.active::after {
+  width: 100%;
+}
+
+.active {
+  opacity: 1;
+}
+
+/* ================================= */
 
 .socialIcons {
   display: flex;
@@ -177,6 +190,7 @@
     font-weight: 500;
     display: block;
     padding: 0.5rem 0;
+    position: relative;
     transition: opacity 0.3s ease;
   }
 
@@ -184,11 +198,27 @@
     opacity: 0.8;
   }
 
+  /* underline for active link on mobile too */
+  .mobileNavLinks li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #D4A373;
+    transition: width 0.3s ease;
+  }
+
+  .mobileNavLinks li a:hover::after,
+  .mobileNavLinks li a.active::after {
+    width: 100%;
+  }
+
   .mobileSocialIcons {
     display: flex;
     gap: 1rem;
     padding-top: 1rem;
-    /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
   }
 
   .overlay {
@@ -228,6 +258,7 @@
     width: 80%;
   }
 }
+
 @media (min-width: 2000px) {
   .navLinks li a {
     font-size: 30px;
