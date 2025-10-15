@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className={styles.rightSection}>
               <ul className={styles.navLinks}>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/">About</Link></li>
+                <li><Link to="/about">About</Link></li>
                 <li><Link to="/">Contact Us</Link></li>
               </ul>
               <span style={{ color: "white" }}>|</span>
@@ -61,7 +61,7 @@ const Navbar = () => {
               <Link to="/" onClick={closeMenu}>Home</Link>
             </li>
             <li>
-              <Link to="/" onClick={closeMenu}>About</Link>
+              <Link to="/about" onClick={closeMenu}>About</Link>
             </li>
             <li>
               <Link to="/" onClick={closeMenu}>Contact Us</Link>

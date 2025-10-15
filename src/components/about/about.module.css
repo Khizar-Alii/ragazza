@@ -1,0 +1,111 @@
+.aboutWrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #92c0fc 0%, #6d8ba9 100%);
+  color: #1b1e25;
+
+}
+.aboutContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.aboutSection {
+  max-width: 900px;
+  width: 100%;
+  padding: 6rem 2rem 4rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1b1e25;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1.5px;
+}
+
+.content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #222;
+}
+
+.content p {
+  margin-bottom: 1.2rem;
+}
+
+.content strong {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.signature {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.signature p {
+  margin: 0.4rem 0;
+}
+
+.names {
+  font-weight: 700;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .aboutSection {
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 4.5rem 1.2rem 2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 4rem 0.9rem 2rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .content {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .names {
+    font-size: 0.95rem;
+  }
+}
